@@ -1,0 +1,21 @@
+<!-- Utilizes utility CSS framework: https://tailwindcss.com/docs -->
+<div id="app" class="flex justify-center">
+  <div class="overflow-auto p-5 rounded-lg" style="background-color: #1B263B">
+    <table>
+      <thead>
+        <tr v-for="row in table.headerRows">
+          <th v-for="cell in row" class="p-3 font-bold header text">
+            {{cell}}
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr v-for="row in table.dataRows">
+          <td v-for="(cell, index) in row.cells" :style="{paddingLeft: getIndentation(row.groupLevel, index)}" :class="{header: row.category === 'SECTION'}" class="p-2 whitespace-nowrap text">
+            {{cell}}
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

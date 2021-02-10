@@ -1,0 +1,11 @@
+/*
+---
+name: Consuming a FactSet Report Builder API
+description: Demonstrating a simple web application consuming a FactSet Report Builder API
+resources:
+  - https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js
+  - https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.0.2/tailwind.min.css
+  - https://fonts.googleapis.com/css2?family=Roboto&display=swap
+normalize_css: no
+---
+*/
